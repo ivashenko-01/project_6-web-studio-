@@ -322,6 +322,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="container">
+                    <?php echo date('Y-M-d H:i:s'); ?>
                     <b>© 2023 - IT BEAR. Все права защищены.</b>
                 </div>
             </div>
