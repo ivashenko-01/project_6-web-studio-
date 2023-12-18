@@ -1,0 +1,466 @@
+/* ---------- Автор Framework Bear: IT BEAR ----------
+
+        Основатель: Евгений Иващенко
+        Контакты для связи:
+            - vkontakte: https://vk.com/id92506149
+            - telegram: @eugene2022987
+            - youtube: https://www.youtube.com/@itbear5698/featured
+            - github: https://github.com/ivashenko-01
+
+        Информация:
+            - данная чистая сборка находится в разработке
+            - суть чистой сборки: 
+
+        Версия Чистой сборки: v1.0.0
+
+        Контакты для поддержки автора:
+            - boosty: https://boosty.to/it-bear/donate
+            - vkontakte: https://vk.com/donut/it_bear_russia
+            - tinkoff: https://www.tinkoff.ru/cf/AOJg3fN3iOG
+
+   ------------------- Framework Bear ------------------- */
+
+/* -- =============== GOOGLE FONTS =============== -- */
+@import url(X);
+
+/* -- =============== LOCAL FONTS =============== -- */
+@font-face {
+  font-family: X;
+  src: url(X);
+  font-weight: X;
+  font-style: X;
+}
+
+
+/* -- =============== VARIABLES CSS =============== -- */
+
+:root {
+
+  /* -- =============== COLORS =============== -- */
+  --body-color: X;
+  --title-color: X;
+  --text-color: X;
+  
+  /* -- =============== FONT AND TYPOGRAPHY =============== -- */
+  /* -- .5rem = 8px | 1rem = 16px | 2rem = 32px -- */
+  --body-font: 'Poppins', sans-serif;
+
+  --body-font-size: 1rem; /* 16px */
+
+  --h1-font-size: 64px; /* 4rem */
+  --h2-font-size: 48px; /* 3rem */
+  --h3-font-size: 36px; /* 2,25rem */
+  --h4-font-size: 32px; /* 2rem */
+  --h5-font-size: 24px; /* 1.5rem */
+  --h6-font-size: 20px; /* 1.25rem */
+
+  --text-font-size: 16px; /* 1rem */
+  --description-font-size: 14px; /* 0.875rem */
+
+  --button-font-size: 20px; /* 1.25rem */
+
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
+}
+h4 {
+  font-size: var(--h4-font-size);
+}
+h5 {
+  font-size: var(--h5-font-size);
+}
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+
+p {
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+}
+
+button {
+font-size: var(--button-font-size);
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 1480px;
+  width: 100%;
+
+  padding: 0 20px;
+}
+
+/* -- ============= HEADER  ============= --*/
+.header {
+  padding: 5px 0;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__company .company__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__contacts .contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__contacts > a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.header__contacts > a > i {
+  position: absolute;
+  color: white;
+}
+
+.header__contacts > a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #0EB194;
+  border-radius: 100%;
+  
+  width: 38px;
+  height: 38px;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/* ========================================= */
+
+.marketing-container{
+  position: relative;
+  height: 600px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing-container h1 {
+  color: white;
+}
+
+.marketing-container img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.marketing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.marketing-text p {
+  color: white;
+  max-width: 500px;
+  text-align: center;
+}
+/* ========================================= */
+.services {
+  padding: 50px 0;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.services-list-item a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+
+  width: 450px;
+  height: 600px;
+  border-radius: 0px 0px 50px 50px;
+  background: linear-gradient(151deg, #347E71 0%, #0EB194 87.09%);
+  color: white;
+}
+
+
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* ========================================= */
+.partners {
+  padding: 50px 0;
+}
+.partners .container {
+  overflow: hidden;
+}
+.partners-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.partners__list li {
+  background-color: black;
+  min-width: 300px;
+  height: 150px;
+}
+
+
+/* ========================================= */
+
+/* -- ============= FOOTER  ============= --*/
+
+.footer {
+  padding-top: 50px;
+}
+
+.footer-top {
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer__company {
+  max-width: 300px;
+}
+
+.footer__company p {
+  text-align: justify;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+}
+
+.footer__list li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__list li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer__company,
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__social-list a i {
+  font-size: 24px;
+}
+/* ===================== */
+
+
+
+/* ===================== */
+.feedback__question {
+  padding: 50px 0;
+}
+
+.feedback__question-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__question-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback__question-button {
+  padding: 14px 36px;
+  color: white;
+  background: linear-gradient(90deg, #0EB194 0%, #347E71 0.01%, #0EB194 100%);
+box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(14, 177, 148, 0.10);
+}
+/* ===================== */
+.feedback__select {
+  padding: 50px 0;
+}
+.feedback__select-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.feedback__select-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.feedback__select-button {
+  padding: 14px 36px;
+}
+
+.feedback__select-button.dark {
+  color: white;
+  background: linear-gradient(90deg, #0EB194 0%, #347E71 0.01%, #0EB194 100%);
+  box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(14, 177, 148, 0.10);
+}
+
+.feedback__select-button.light {
+  color: black;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(255, 255, 255, 0.10) 100%);
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10), -4px -4px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* ============================= */
+
+
+
+/* =========== CASE ========== */
+.case {
+  padding: 50px 0;
+}
+
+.case-row {
+  display: flex;
+}
+
+.case__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.case__list-item {
+  min-height: 350px;
+  max-width: 34%;
+  padding: 50px;
+
+  background-image: linear-gradient(to top, rgba(52,126,113,1), rgba(52,126,113,0.5)), url(../../images/background/case_1.png);
+
+  border: 1px solid white;
+}
+
+.case__list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  height: 100%;
+
+  color: white;
+
+}
+
+.case__list-item div a {
+  display: inline-block;
+  background-color: white;
+  padding: 14px 36px;
+  color: black;
+}
+
+/* =========== CASE ========== */
+
+
