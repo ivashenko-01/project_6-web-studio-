@@ -464,3 +464,7 @@ box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(1
 /* =========== CASE ========== */
 
 
+.b24-form-sign {
+  display: none;
+}
+
