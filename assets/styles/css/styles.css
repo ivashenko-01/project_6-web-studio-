@@ -844,3 +844,51 @@ box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(1
 .feedback__question.contacts {
   padding: 100px 0;
 }
+
+.sectors {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sector {
+  display: flex;
+  gap: 100px;
+
+  border-radius: 50px;
+  background: #F2F2F4;
+  padding: 50px;
+}
+
+.sector-title {
+  max-width: 295px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.chapters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+}
+
+.chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectors-short {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.sector:hover {
+  background: rgba(14, 177, 148, 1);
+  color: white;
+}
