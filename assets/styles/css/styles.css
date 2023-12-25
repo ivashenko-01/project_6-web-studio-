@@ -252,6 +252,12 @@ font-size: var(--button-font-size);
   gap: 30px;
 }
 
+.actions__menu-item:hover {
+  background: rgba(14, 177, 148, 1);
+  color: white;
+}
+
+
 
 /* ========================================= */
 .services {
@@ -593,12 +599,13 @@ box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(1
 .case__list {
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .case__list-item {
   min-height: 350px;
-  max-width: 34%;
+  max-width: 615px;
+  width: 100%;
   padding: 50px;
 
   background-image: linear-gradient(to top, rgba(52,126,113,1), rgba(52,126,113,0.5)), url(../../images/background/case_1.png);
@@ -653,8 +660,55 @@ box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(1
   color: #0EB194;
 }
 
-/* =========== CASE ========== */
+/* =========== END CASE ========== */
 
+
+/* ============ START STAGES =============== */
+.stages-of-work {
+  padding: 50px 0;
+}
+
+.stages-of-work__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stages-of-work__item {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.stages-of-work__number {
+  color: #BFBFBF;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.stages-of-work__description {
+  /* display: flex;
+  flex-direction: column;
+  gap: 20px; */
+}
+
+.stages-of-work__description-title {
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.stages-of-work__description-button {
+  border-radius: 10px;
+  background: #0EB194;
+  padding: 16px 34px;
+  color: white;
+}
+/* ============ END STAGES =============== */
+
+/* ======================================== */
 
 .b24-form-sign {
   display: none;
@@ -891,4 +945,44 @@ box-shadow: 4px 4px 15px 0px rgba(14, 177, 148, 0.10), -4px -4px 15px 0px rgba(1
 .sector:hover {
   background: rgba(14, 177, 148, 1);
   color: white;
+}
+
+.preview .container {
+  padding: 50px;
+  border-radius: 0px 0px 50px 50px;
+  background: #0EB194;
+  color: white;
+}
+
+.preview__title {
+  margin-bottom: 20px;
+}
+
+.preview__description {
+  margin-bottom: 50px;
+}
+
+.preview__money {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.enabled__buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+
+.enabled__button {
+  padding: 25px;
+  border-radius: 25px;
+  background: #F6F6F6;
+}
+
+.return-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
