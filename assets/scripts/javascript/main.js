@@ -89,7 +89,7 @@ const swiperServices = new Swiper('.swiper-services', {
   spaceBetween: 30,
 
   autoplay: {
-      delay: 3000,
+      delay: 6000,
       disableOnInteraction: true,
   },
 

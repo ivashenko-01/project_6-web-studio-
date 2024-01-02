@@ -214,6 +214,10 @@
     gap: 20px;
   }
 
+  .services-list-item {
+    max-width: 300px;
+  }
+
 }
 
 @media (max-width: 420px) {
@@ -230,6 +234,10 @@
     width: 250px;
     height: 100px;
     padding: 20px;
+  }
+
+  .services-list-item {
+    max-width: 250px;
   }
 
 }
