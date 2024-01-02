@@ -41,6 +41,9 @@
        <!-- Подключение шрифтов на Локальном Хранилище -->
        <link rel="stylesheet" href="../../../../assets/styles/css/fonts.css">
    
+       <!-- Подключение Библиотеки Swiper/Slick Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
    
        <!-- Подключение файла с основными стилями -->
@@ -119,23 +122,26 @@
 
                 <section class="preview">
                     <div class="container">
-                        <h2 class="preview__title">Разработка Landing Page</h2>
-                        <p class="preview__description">Займемся разработкой страницы для рекламы продукта. Имеется возможность<br>
-                            как заказать верстку Landing Page по готовому макету, так и с нуля подготовить макет под верстку.
-                            <br><br>Важной особенностью является то, что Вы можете самостоятельно определять срочность заказа.
-                            <br><br>Для вашего удобства можем заняться полноценным исследованием, подбором контента и материала.
-                        </p>
-                        <p class="preview__money">От 15 000 ₽</p>
+                        <div class="preview-wrapper">
+                            <h2 class="preview__title">Разработка Landing Page</h2>
+                            <p class="preview__description">Займемся разработкой страницы для рекламы продукта. Имеется возможность<br>
+                                как заказать верстку Landing Page по готовому макету, так и с нуля подготовить макет под верстку.
+                                <br><br>Важной особенностью является то, что Вы можете самостоятельно определять срочность заказа.
+                                <br><br>Для вашего удобства можем заняться полноценным исследованием, подбором контента и материала.
+                            </p>
+                            <p class="preview__money">От 15 000 ₽</p>
+                        </div>
+                        
                     </div>
                 </section>
                 <section class="services">
-                    <div class="container">
+                    <div class="container swiper swiper-services">
                         <div class="section-title">
                             <h2>ТАРИФЫ НА СОЗДАНИЕ LANDING PAGE</h2>
                             <a href="../services-pages.html">На странице полного списка услуг можно взять дополнительные инструменты к данным тарифам. Допустим, Вам может понадобиться онлайн-чат и мы его можем установить.</a>
                         </div>
-                        <ul class="services-list">
-                            <li class="services-list-item">
+                        <ul class="services-list swiper-wrapper">
+                            <li class="services-list-item swiper-slide">
                                 <a href="#" class="services-list-item__link">
                                     <div class="services-list__item-title">
                                         <h3>Базовый</h3>
@@ -150,7 +156,7 @@
                                     <p class="services-list__item-money">От 5.000 рублей</p>
                                 </a>
                             </li>
-                            <li class="services-list-item">
+                            <li class="services-list-item swiper-slide">
                                 <a href="#" class="services-list-item__link">
                                     <div class="services-list__item-title">
                                         <h3>Профессинальный</h3>
@@ -169,7 +175,7 @@
                                     <p class="services-list__item-money">От 50.000 рублей</p>
                                 </a>
                             </li>
-                            <li class="services-list-item">
+                            <li class="services-list-item swiper-slide">
                                 <a href="#" class="services-list-item__link">
                                     <div class="services-list__item-title">
                                         <h3>Индивидуальный</h3>
@@ -187,32 +193,32 @@
                     </div>
                 </section>
                 <section class="enabled">
-                    <div class="container">
+                    <div class="container swiper swiper-actions">
                         <div class="section-title">
                             <h2>УСЛУГА СОЗДАНИЯ LANDING PAGE ВКЛЮЧАЕТ</h2>
                         </div>
-                        <ul class="actions__menu-items">
-                            <li class="actions__menu-item">
+                        <ul class="actions__menu-items swiper-wrapper">
+                            <li class="actions__menu-item swiper-slide">
                                 <h6 class="actions__menu-suptitle">Оплата по этапам</h6>
                                 <p class="actions__menu-suptext">Разрабатываем сайт в 4-е этапа. Оплата нового этапа, только после приемки предыдущего</p>
                             </li>
-                            <li class="actions__menu-item">
+                            <li class="actions__menu-item swiper-slide">
                                 <h6 class="actions__menu-suptitle">Фиксированная смета</h6>
                                 <p class="actions__menu-suptext">Озвученная в КП цена не меняется, вплоть до полной готовности сайта.</p>
                             </li>
-                            <li class="actions__menu-item">
+                            <li class="actions__menu-item swiper-slide">
                                 <h6 class="actions__menu-suptitle">Мы с вами надолго</h6>
                                 <p class="actions__menu-suptext">Работаем на результат, по принципу win-win. Делаем свою работу так, чтобы остаться с вами надолго.</p>
                             </li>
-                            <li class="actions__menu-item">
+                            <li class="actions__menu-item swiper-slide">
                                 <h6 class="actions__menu-suptitle">Продуманная структура</h6>
                                 <p class="actions__menu-suptext">Работаем на результат, по принципу win-win. Делаем свою работу так, чтобы остаться с вами надолго.</p>
                             </li>
                         </ul>
-                        <div class="enabled__buttons">
+                        <!-- <div class="enabled__buttons">
                             <button class="enabled__button"><i class="ri-arrow-left-line"></i></button>
                             <button class="enabled__button"><i class="ri-arrow-right-line"></i></button>
-                        </div>
+                        </div> -->
                     </div>
                     
                 </section>
@@ -504,8 +510,8 @@
        <!-- Подключение Библиотеки FancyBox -->
        <!-- <script src=""></script> -->
    
-       <!-- Подключение Библиотеки Swiper/Slick Slider -->
-       <!-- <script src=""></script> -->
+       <!-- Подключение стилей библиотеке Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
        
        <!-- Подключение основного JavaScript -->
        <script src="../../../../assets/scripts/javascript/main.js"></script>

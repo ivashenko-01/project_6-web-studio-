@@ -69,6 +69,11 @@
     font-size: 6px;
   }
 
+  .sector {
+    flex-direction: column;
+    gap: 50px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -99,6 +104,10 @@
     display: none;
   }
 
+  .page-path__items {
+    font-size: 8px;
+  }
+
   .marketing-text p {
     width: 350px;
   }
@@ -126,6 +135,10 @@
 
   .services-list__item-money {
     font-size: 20px;
+  }
+
+  .section-title {
+    text-align: center;
   }
 
 
@@ -239,6 +252,15 @@
   .services-list-item {
     max-width: 250px;
   }
+
+  .preview-wrapper {
+    padding: 30px 20px;
+    border-radius: 0 0 30px 30px;
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -ms-border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+}
 
 }
 
