@@ -240,6 +240,11 @@ font-size: var(--button-font-size);
 
   /* display: flex;
   justify-content: center; */
+
+  /* display: flex;
+  gap: 50px; */
+
+  
 }
 
 .actions__menu-item {
@@ -252,6 +257,7 @@ font-size: var(--button-font-size);
 
   display: flex;
   flex-direction: column;
+  height: auto;
   gap: 30px;
 }
 
@@ -270,8 +276,12 @@ font-size: var(--button-font-size);
 .services-list {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  /* gap: 30px; */
+  /* flex-wrap: wrap; */
+}
+
+.services-list-item {
+  width: auto;
 }
 
 

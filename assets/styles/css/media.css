@@ -4,11 +4,20 @@
     height: 40vw;
   }
 
+  .fast-sevice__box {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+  }
+
 
 }
 
 @media (max-width: 1280px) {
-
+  .fast-sevice__box {
+    max-width: 1024px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -38,6 +47,11 @@
 
   .contacts-wrapper__text {
     font-size: 9px;
+  }
+
+  .fast-sevice__box {
+    max-width: 620px;
+    width: 100%;
   }
 
 }
@@ -94,6 +108,28 @@
     min-height: 50px;
   }
 
+  .services-list__item-title {
+    min-height: 5vw;
+  }
+  
+  .fast-sevice__box-title {
+    font-size: 20px;
+  }
+
+  .fast-sevice__box-text {
+    font-size: 14px;
+  }
+
+  .answers-accord__item {
+    padding: 15px 30px;
+  }
+
+  .services-list__item-money {
+    font-size: 20px;
+  }
+
+
+
 }
 
 /*  -- =============== АДАПТИВ ПОД СМАРТФОНЫ =============== --*/
@@ -115,7 +151,25 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}
+  }
+
+  .feedback__question-wrapper {
+    justify-content: center;
+  }
+
+  .feedback__question-heading-title {
+    text-align: center;
+  }
+
+  .fast-sevice__box {
+    min-height: 350px;
+  }
+
+  .fast-sevice__box {
+    max-width: 320px;
+    width: 100%;
+  }
+
 
 }
 @media (max-width: 480px) {
@@ -146,9 +200,37 @@
     width: 250px;
   }
 
+  .actions__menu-item {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .services-list__item-money {
+    font-size: 16px;
+  }
+
+  .feedback__select-buttons {
+    /* flex-direction: column; */
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  
+
 }
 
 @media (max-width: 360px) {
+  .actions__menu-item {
+    max-width: 250px;
+  }
+
+  .partners__list-item {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+  }
 
 }
 
@@ -179,6 +261,12 @@
   .marketing-text p {
     width: 200px;
   }
+
+  .partners__list-item {
+    width: 200px;
+  }
+
+  
 
 
 

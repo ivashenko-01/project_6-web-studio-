@@ -46,7 +46,7 @@ const swiperPartners = new Swiper('.swiper-partners', {
   spaceBetween: 30,
 
   autoplay: {
-      delay: 1000,
+      delay: 3000,
       disableOnInteraction: true,
   },
 
@@ -56,6 +56,28 @@ const swiperPartners = new Swiper('.swiper-partners', {
 
 });
 const swiperActions = new Swiper('.swiper-actions', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  
+  grabCursor: true,
+
+  // centeredSlides: 'auto',
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
+
+  // pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+
+});
+
+const swiperServices = new Swiper('.swiper-services', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
