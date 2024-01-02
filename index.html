@@ -41,6 +41,9 @@
     <!-- Подключение шрифтов на Локальном Хранилище -->
     <link rel="stylesheet" href="./assets/styles/css/fonts.css">
 
+    <!-- Подключение Библиотеки Swiper/Slick Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- Подключение файла с основными стилями -->
@@ -89,8 +92,8 @@
                             <i class="ri-phone-fill"></i>
                         </a>
                         <div class="contacts-wrapper">
-                            <a href="#"><b>it-bear@mail.ru</b></a>
-                            <p>Ежедневно с 9:00 до 20:00</p>
+                            <a class="contacts-wrapper__email" href="#"><b>it-bear@mail.ru</b></a>
+                            <p class="contacts-wrapper__text">Ежедневно с 9:00 до 20:00</p>
                         </div>
                     </div>
                 </div>
@@ -116,17 +119,17 @@
             </section>
 
             <section class="actions">
-                <div class="container">
-                    <ul class="actions__menu-items">
-                        <li class="actions__menu-item">
+                <div class="container swiper swiper-actions">
+                    <ul class="actions__menu-items swiper-wrapper">
+                        <li class="actions__menu-item swiper-slide">
                             <h6 class="actions__menu-suptitle">Если еще нет дизайна сайта</h6>
                             <p class="actions__menu-suptext">Создадим дизайн систему, дизайн сайта под Вашу организацию.</p>
                         </li>
-                        <li class="actions__menu-item">
+                        <li class="actions__menu-item swiper-slide">
                             <h6 class="actions__menu-suptitle">Если есть дизайн, но нет сайта</h6>
                             <p class="actions__menu-suptext">Разработаем сайт по Вашему макету с дизайном сайта.</p>
                         </li>
-                        <li class="actions__menu-item">
+                        <li class="actions__menu-item swiper-slide">
                             <h6 class="actions__menu-suptitle">Если есть дизайн и сайт, но нужно доработать</h6>
                             <p class="actions__menu-suptext">Внесём любые правки на Ваш сайт, от текстовых, до полноценного перестроения дизайна.</p>
                         </li>
@@ -190,31 +193,51 @@
             </section>
 
             <section class="partners">
-                <div class="container">
+                <div class="container swiper swiper-partners">
                     <div class="partners-heading">
                         <h2>МЫ СОТРУДНИЧАЕМ</h2>
                         <p>Просмотреть весь список партнеров</p>
                     </div>
-                    <ul class="partners__list">
-                        <li class="partners__list-item">
-                            <a href="#">a</a>
+                    <ul class="partners__list swiper-wrapper">
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
                         </li>
-                        <li class="partners__list-item">
-                            <a href="#">a</a>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
                         </li>
-                        <li class="partners__list-item">
-                            <a href="#">a</a>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
                         </li>
-                        <li class="partners__list-item">
-                            <a href="#">a</a>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
                         </li>
-                        <li class="partners__list-item">
-                            <a href="#">a</a>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
                         </li>
-                        <li class="partners__list-item">
-                            <a href="#">a</a>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
+                        </li>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
+                        </li>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
+                        </li>
+                        <li class="partners__list-item swiper-slide">
+                            <div class="partners__list-filter"></div>
+                            <img class="partners__list-images" src="./assets/images/partners/yandex.png" alt="">
                         </li>
                     </ul>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -275,32 +298,41 @@
             <section class="case">
                 <div class="case-row">
                     <ul class="case__list">
+                        <li class="case__list-item case__long-1">
+                            <div class="case__list-item-wrapper">
+                                <h3>Многостраничный сайт</h3>
+                                <p>Создание одностраничного сайта с использованием HTML, CSS, JavaScript и всё это на максимально чистой сборке.</p>
+                                <div>
+                                    <a href="https://moskvich-auto.ru/models/moskvich-6" target="_blank">Просмотреть</a>
+                                    <!-- <a href="./assets/pages/case-pages/case-page/case-page__two.html">Просмотреть</a> -->
+                                </div>
+                            </div>
+                            <img class="case__list-image" src="./assets/images/background/case_2.png" alt="">
+                            <div class="case__list-image-filter"></div>
+                        </li>
                         <li class="case__list-item">
                             <div class="case__list-item-wrapper">
                                 <h3>LANDING PAGE</h3>
                                 <p>Создание одностраничного сайта с использованием HTML, CSS, JavaScript и всё это на максимально чистой сборке.</p>
                                 <div>
-                                    <a href="./assets/pages/case-pages/case-page/case-page__one.html">Просмотреть</a>
+                                    <a href="https://ivashenko-01.github.io/yandex-tracker/" target="_blank">Просмотреть</a>
+                                    <!-- <a href="./assets/pages/case-pages/case-page/case-page__one.html">Просмотреть</a> -->
                                 </div>
                             </div>
+                            <img class="case__list-image" src="./assets/images/background/case_1.png" alt="">
+                            <div class="case__list-image-filter"></div>
                         </li>
-                        <li class="case__list-item">
-                            <div class="case__list-item-wrapper">
-                                <h3>Многостраничный сайт</h3>
-                                <p>Создание одностраничного сайта с использованием HTML, CSS, JavaScript и всё это на максимально чистой сборке.</p>
-                                <div>
-                                    <a href="./assets/pages/case-pages/case-page/case-page__two.html">Просмотреть</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="case__list-item">
+                        <li class="case__list-item case__shop-1">
                             <div class="case__list-item-wrapper">
                                 <h3>Интернет-магазин</h3>
                                 <p>Создание одностраничного сайта с использованием HTML, CSS, JavaScript и всё это на максимально чистой сборке.</p>
                                 <div>
-                                    <a href="./assets/pages/case-pages/case-page/case-page__three.html">Просмотреть</a>
+                                    <a href="https://optimus-cctv.ru/">Просмотреть</a>
+                                    <!-- <a href="./assets/pages/case-pages/case-page/case-page__three.html">Просмотреть</a> -->
                                 </div>
                             </div>
+                            <img class="case__list-image" src="./assets/images/background/case_4.png" alt="">
+                            <div class="case__list-image-filter"></div>
                         </li>
                     </ul>
                 </div>
@@ -372,7 +404,7 @@
                         <p>Просмотреть весь список партнеров</p>
                     </div>
                     <div class="answers-accord">
-                        <ul>
+                        <ul class="answers-accord__items">
                             <li class="answers-accord__item">
                                 <input id="answers-accord__1" type="checkbox" name="answers-accord">
                                 <label for="answers-accord__1" class="answers-accord__button">
@@ -645,8 +677,8 @@
     <!-- Подключение Библиотеки FancyBox -->
     <!-- <script src=""></script> -->
 
-    <!-- Подключение Библиотеки Swiper/Slick Slider -->
-    <!-- <script src=""></script> -->
+    <!-- Подключение стилей библиотеке Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Онлайн виджет от Bitrix24 -->
     <script>

@@ -31,3 +31,48 @@ function goTop() {
 }
 
 // https://itchief.ru/javascript/btn-up
+
+
+
+const swiperPartners = new Swiper('.swiper-partners', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  
+  grabCursor: true,
+
+  centeredSlides: 'auto',
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  autoplay: {
+      delay: 1000,
+      disableOnInteraction: true,
+  },
+
+  // pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+
+});
+const swiperActions = new Swiper('.swiper-actions', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  
+  grabCursor: true,
+
+  // centeredSlides: 'auto',
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
+
+  // pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+
+});

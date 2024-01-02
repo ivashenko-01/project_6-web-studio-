@@ -1,5 +1,9 @@
 /*  -- =============== АДАПТИВ ПОД МОНИТОРЫ =============== --*/
 @media (max-width: 1440px) {
+  .marketing-container {
+    height: 40vw;
+  }
+
 
 }
 
@@ -7,8 +11,49 @@
 
 }
 
+@media (max-width: 1140px) {
+  .header__list {
+    font-size: 14px;
+  }
+
+
+  .contacts-wrapper__email {
+    font-size: 14px;
+  }
+
+  .contacts-wrapper__text {
+    font-size: 12px;
+  }
+}
+
 /*  -- =============== АДАПТИВ ПОД ПЛАНШЕТЫ =============== --*/
 @media (max-width: 1024px) {
+  .header__list {
+    font-size: 10px;
+  }
+
+  .contacts-wrapper__email {
+    font-size: 10px;
+  }
+
+  .contacts-wrapper__text {
+    font-size: 9px;
+  }
+
+}
+
+@media (max-width: 888px) {
+  .header__list {
+    font-size: 8px;
+  }
+
+  .contacts-wrapper__email {
+    font-size: 8px;
+  }
+
+  .contacts-wrapper__text {
+    font-size: 6px;
+  }
 
 }
 
@@ -36,9 +81,43 @@
   
   }
 
+  .header__list {
+    display: none;
+  }
+
+  .marketing-text p {
+    width: 350px;
+  }
+
+  .actions__menu-item {
+    gap: 10px;
+    min-height: 50px;
+  }
+
 }
 
 /*  -- =============== АДАПТИВ ПОД СМАРТФОНЫ =============== --*/
+
+@media (max-width: 620px) {
+  .case__list-item {
+    min-height: 45vw;
+  }
+
+  .marketing-container {
+    gap: 10px;
+  }
+
+  .marketing-button {
+    font-size: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+}
 @media (max-width: 480px) {
 
   :root {
@@ -63,6 +142,10 @@
   
   }
 
+  .marketing-text p {
+    width: 250px;
+  }
+
 }
 
 @media (max-width: 360px) {
@@ -70,5 +153,33 @@
 }
 
 @media (max-width: 320px) {
+
+
+  :root {
+    
+    /* -- =============== FONT AND TYPOGRAPHY =============== -- */
+    /* -- .5rem = 8px | 1rem = 16px | 2rem = 32px -- */
+  
+    --body-font-size: 0.625rem; /* 10px */
+  
+    --h1-font-size: 20px;
+    --h2-font-size: 16px; 
+    --h3-font-size: 14px;
+    --h4-font-size: 12px; 
+    --h5-font-size: 10px; 
+    --h6-font-size: 8px; 
+  
+    --text-font-size: 8px; 
+    --description-font-size: 6px; 
+  
+    --button-font-size: 8px;
+  
+  }
+
+  .marketing-text p {
+    width: 200px;
+  }
+
+
 
 }
